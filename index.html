@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QR Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="main">
+
+
+<div class="card">
+
+
+<h1>QR Platform</h1>
+
+<p class="tag">
+Generate • Download • Manage QR Codes
+</p>
+
+
+<input 
+type="text"
+id="text"
+placeholder="Enter Text or URL">
+
+
+<button onclick="generateQR()">
+Generate QR
+</button>
+
+
+<div id="qrcode"></div>
+
+
+<button onclick="downloadQR()">
+Download QR
+</button>
+
+
+</div>
+
+
+
+
+<div class="history-card">
+
+
+<h2>QR History</h2>
+
+
+<ul id="history">
+
+</ul>
+
+
+<button class="clear"
+onclick="clearHistory()">
+
+Clear History
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
